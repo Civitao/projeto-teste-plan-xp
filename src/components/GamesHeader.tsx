@@ -4,7 +4,7 @@ export function GamesHeader() {
 
       <div className="text-[#292929]  h-32  font-bold object-cover tracking-tight text-[116px] relative ">02.
       <h4 className=" text-white top-14  tracking-normal absolute font-normal text-base">/O que fazemos </h4>
-      <h2 className=" text-[43px] top-[72px] font-normal absolute tracking-normal text-[#939598]">/Games</h2>
+      <h2 className=" text-[43px] top-[72px] font-normal absolute tracking-wide text-[#939598]">/Games</h2>
       </div>
 
       <h3 className="text-[#939598] mt-4 text-3xl">Desenvolvimento de games digitais.</h3>

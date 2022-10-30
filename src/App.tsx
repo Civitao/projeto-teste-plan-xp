@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Sidebar } from './components/Sidebar'
 import { CasesGames } from './pages/CasesGames'
+import { Contact } from './pages/Contact'
 import { Games } from './pages/Games'
 import './styles/global.css'
 
@@ -13,13 +14,9 @@ function App() {
   return (
     <div className="bg-[#1e1e1e] scroll-smooth overflow-x-hidden w-screen h-screen pl-60">
      <Sidebar />
-
-    <Games />
-
-    <CasesGames />
-
-
-
+     <Games />
+     <CasesGames />
+     <Contact />
     </div>
   )
 }

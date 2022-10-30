@@ -7,7 +7,7 @@ export function Sidebar() {
     <nav className="fixed top-0 left-0 w-60 h-screen bg-zinc-800 flex-col border-r border-r-zinc-700 flex items-center text-center content-center">
       <img className='mt-10 w-40' src={Logo}></img>
       <div className='mt-32 flex flex-col gap-8'>
-        <SidebarOption menuNumber='01.' menuName='/quem somos' />
+        <SidebarOption  menuNumber='01.' menuName='/quem somos' />
         <SidebarOption menuNumber='02.' menuName='/o que fazemos' />
         <SidebarOption menuNumber='03.' menuName='/plan news' />
         <SidebarOption menuNumber='04.' menuName='/nossos clientes' />

@@ -3,7 +3,7 @@ export function CasesGamesHeader () {
     <div className="h-[122px]  gap-8 w-[645px] flex  flex-row ">
 
       <div className="text-[#292929] font-bold object-cover tracking-tight text-[116px] relative w-[300px] h-32 ">03.
-      <h4 className="text-white top-14 tracking-normal absolute font-normal text-base">/Plan news</h4>
+      <h4 className="text-white top-14 tracking-wide absolute font-normal text-base">/Plan news</h4>
       <h2 className="text-[43px] top-[72px] font-normal absolute z-10 tracking-normal  text-[#939598] ">/Cases Games</h2>
       </div>
     <div className="flex flex-row z-10 gap-1">
