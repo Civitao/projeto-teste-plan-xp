@@ -1,6 +1,6 @@
 export function ContactHeader() {
   return(
-    <div className="w-[620px]  h-56 ">
+    <div className="w-[620px] h-56 ">
 
       <div className="text-[#292929] font-bold object-cover tracking-tight text-[116px] relative w-[300px] h-32 ">05.
       <h2 className="text-[46px] top-14 font-normal absolute z-10 tracking-wide  text-[#939598] ">/Contato</h2>
