@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Sidebar } from './components/Sidebar'
 import { TopBar } from './components/TopBar'
 import { CasesGames } from './pages/CasesGames'
@@ -8,12 +7,7 @@ import './styles/global.css'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-  const size = window.innerHeight 
-
-
-
-  console.log(window.location.pathname)
+ 
   
   return (
 
