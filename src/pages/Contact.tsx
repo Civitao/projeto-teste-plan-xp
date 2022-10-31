@@ -11,14 +11,14 @@ import FullUp from '../assets/web/contato/contact-3.png'
 
 export function Contact() {
   return(
-    <div id="contact" className="w-screen pt-48 flex flex-row pl-28 bg-[#1e1e1e]  h-screen">
+    <div id="contact" className="w-screen pt-80 invisible md:visible lg:pt-48 flex flex-col lg:flex-row lg:pl-28 bg-[#1e1e1e]  h-screen">
         <div className=" h-[660px]">
         <ContactHeader />
         <ContactForm />
         </div>
 
 
-        <div className="w-[632px] ml-28 mt-16 flex flex-col gap-4 h-[480px] ">
+        <div className="w-[632px] mt-44 lg:ml-28 lg:mt-16 flex flex-col gap-4 h-[480px] ">
           <div className="flex flex-row gap-4">
           <FollowUsCard />
           

@@ -22,7 +22,7 @@ export function CasesGames() {
     ]
 
   return(
-    <div id="/cases-games" className="w-screen bg-[#1e1e1e] pt-48 pl-28 h-screen">
+    <div id="/cases-games" className="w-screen bg-[#1e1e1e] invisible md:visible lg:pt-48 pt-80 lg:pl-28 h-screen">
       <CasesGamesHeader/>
 
       <div className="mt-12 flex flex-row gap-5 ">  

@@ -20,11 +20,11 @@ export function Games() {
   
   
   return(
-    <div id="/games" className="w-screen flex  pt-48 flex-row pl-28 bg-[#1e1e1e] h-screen">
+    <div id="/games" className="w-screen md:visible invisible flex flex-col pt-[128px] lg:pt-48 lg:pl-28 lg:flex  lg:flex-row  bg-[#1e1e1e] h-screen">
       <>
       <GamesHeader />
   
-      <div className="ml-16 flex flex-row mt-4 gap-3">
+      <div className="lg:ml-16 mt-60 flex flex-row md:flex-row lg:flex lg:flex-row lg:mt-4 gap-3">
   
       {gamesCardData.map((item) => (
         <GamesCard image={item.image} key={item.id} description={item.description} /> ))}

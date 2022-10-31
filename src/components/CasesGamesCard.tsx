@@ -17,7 +17,7 @@ export function CasesGamesCard({...props}: CasesGamesCardProps) {
          right-8'  src={Controller}></img>
         </div> 
         <img className="h-44 w-full" src={props.image}></img>
-                                                
+                                                  
         <div  className="pl-5 pr-5  h-[264px] pt-5">
         <h4 className="uppercase text-xs bg-[#939598] p px-1 w-fit font-medium  text-black">{props.caseName}</h4>
         <h3 className="text-[#A1A1A3] tracking-normal leading-6 mt-4 text-xl">{props.caseTitle}</h3>

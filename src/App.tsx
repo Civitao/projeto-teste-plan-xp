@@ -8,7 +8,7 @@ import './styles/global.css'
 
 function App() {
   return (
-    <div className="bg-[#1e1e1e] min-w-[640px] xl:pl-60 scroll-smooth overflow-x-hidden w-screen h-screen ">
+    <div className="bg-[#1e1e1e] xl:pl-60 scroll-smooth overflow-x-hidden w-screen h-screen ">
       <TopBar />  
      <Sidebar />
      <Games />
