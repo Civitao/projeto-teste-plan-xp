@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { FormEvent } from 'react';
+import reCAPTCHA, { ReCAPTCHA } from 'react-google-recaptcha'
 
 export function ContactForm () {
   async function handleSendMessage(event: FormEvent) {
@@ -60,6 +61,8 @@ export function ContactForm () {
     </div>
 
   <div className="w-60 h-[240px] mt-6 bg-zinc-400 text-black">Recaptcha place</div>
+
+    <ReCAPTCHA sitekey="LeXuMoiAAAAAMNRuYmGvBLHD2l67os9duPsUCsb" />
 
     <div className="flex flex-row mt-6 items-center">
     <button className="text-[#939598] items-center  content-center  text-center text-[13px]  uppercase h-5 w-16" type="submit">
