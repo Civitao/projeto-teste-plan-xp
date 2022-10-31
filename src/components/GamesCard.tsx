@@ -1,5 +1,4 @@
-import { ReactNode } from "react";
-import GamesOne from '../assets/web/o-que-fazemos/games-1.png'
+
 
 interface GamesCardProps {
   image: string;
