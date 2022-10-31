@@ -62,7 +62,7 @@ export function ContactForm () {
 
   <div className="w-60 h-[240px] mt-6 bg-zinc-400 text-black">Recaptcha place</div>
 
-    <ReCAPTCHA sitekey="LeXuMoiAAAAAMNRuYmGvBLHD2l67os9duPsUCsb" />
+    <ReCAPTCHA sitekey="6LfcqMoiAAAAAKvV1iMJhr2YEj3BMPLzWp2FGFRm" />
 
     <div className="flex flex-row mt-6 items-center">
     <button className="text-[#939598] items-center  content-center  text-center text-[13px]  uppercase h-5 w-16" type="submit">
