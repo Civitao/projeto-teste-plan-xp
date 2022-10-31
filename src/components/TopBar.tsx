@@ -7,10 +7,10 @@ export function TopBar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="w-screen z-40  h-[132px] sm:h-20 fixed top-0 items-center px-8 flex xl:invisible visible justify-between bg-[#323232]">
-      <img className='w-32 h-16 sm:w-24 sm:h-12 z-50 ' src={Logo}></img>
-      <button onClick={() => setMenuOpen(!false)} className='absolute top-8 right-12 sm:top-3 sm:right-8 z-10'>
-        <GiHamburgerMenu  color={'#939598'} size={58} /> 
+    <div className="w-screen z-40 h-20 sm:h-20 fixed top-0 items-center px-8 flex xl:invisible visible justify-between bg-[#323232]">
+      <img className='w-24 h-12 sm:w-24 sm:h-12 z-50 ' src={Logo}></img>
+      <button onClick={() => setMenuOpen(!false)} className='absolute top-5 right-8 sm:top-5 sm:right-8 z-10'>
+        <GiHamburgerMenu  color={'#939598'} size={38} /> 
       </button>
 
       <div className={menuOpen === true ? 'w-screen visible z-40 absolute items-center translate-x-0 justify-center top-0 right-0 bg-black transition-all opacity-75 h-screen duration-500 origin-right' : 'opacity-0 ease-in-out duration-0 translate-x-36 '}> 
