@@ -1,46 +1,70 @@
+import { ContactDiscoverCard } from "../components/ContactDiscoverCard";
+import { ContactForm } from "../components/ContactForm";
 import { ContactHeader } from "../components/ContactHeader";
+import { ContactLocationCard } from "../components/ContactLocationCard";
+import { FollowUsCard } from "../components/FollowUsCard";
+import GrupoPlanMarketing from '../assets/web/contato/contact-1.png'
+import PlanXp from '../assets/plan-logo.png'
+import FullUp from '../assets/web/contato/contact-3.png'
+
+
 
 export function Contact() {
   return(
-    <div id="contact" className="w-screen pt-48  pl-28 bg-[#1e1e1e]  h-screen">
+    <div id="contact" className="w-screen pt-48 flex flex-row pl-28 bg-[#1e1e1e]  h-screen">
+        <div className=" h-[660px]">
         <ContactHeader />
+        <ContactForm />
+        </div>
 
-        <form className="w-[600px] flex flex-col relative text-white h-[340px]">
+
+        <div className="w-[632px] ml-28 mt-16 flex flex-col gap-4 h-[480px] ">
+          <div className="flex flex-row gap-4">
+          <FollowUsCard />
           
-        <label className="text-[15px]" htmlFor="name" >Nome:</label>
-        <div className="bg-[#1e1e1e] rotate-45 w-6 h-6 absolute border-b-2 border-[#363636] -right-3 top-4"> </div> 
-          <input name="name" className="w-full h-9 mt-1 bg-[#1e1e1e]  outline-none text-white border-2 border-[#363636]" type='name'/>
-                
-        <div className="columns-2 mt-4">
-
-        <div className="flex flex-col relative ">
-        <label className="text-[15px]" htmlFor="e-mail">E-mail: </label>
-        <div className="bg-[#1e1e1e] rotate-45 w-6 h-6 absolute border-b-2 border-[#363636] -right-2 top-4"> </div> 
-          <input name="e-mail" className="w-[290px] h-9 mt-1 bg-[#1e1e1e]  outline-none text-white border-2 border-[#363636]" type='email'/>
-        </div>
-
-        <div className="flex flex-col relative">
-        <label className="text-[15px]" htmlFor="cellphone"  >Telefone:  </label>
-        <div className="bg-[#1e1e1e] rotate-45 w-6 h-6 absolute border-b-2 border-[#363636] -right-2 top-4"> </div>
-          <input id="cellphone" name="cellphone" className="w-[290px] h-9 bg-[#1e1e1e] outline-none text-white border-2 mt-1 border-[#363636]" type='text'/>     
-        </div>
-
-        </div>
-
-        <div className="relative mt-4">
-        <label className="text-[15px] " htmlFor="message">Mensagem:</label>
-        <div className="bg-[#1e1e1e] rotate-45 w-6 h-6 absolute border-b-2 border-[#363636] -right-3 top-4"> </div>
-        <textarea name="message"  className="w-full mt-1 resize-none h-28  bg-[#1e1e1e]  text-white outline-none border-2 border-[#363636]" />
-        </div>
-
-        <div className="flex flex-row items-center">
-        <button className="text-[#939598] items-center  content-center  text-center text-sm uppercase h-5 w-16" type="submit">
-          Enviar  
+          <ContactLocationCard
+           uf="/RS" 
+           adress="Rua Onze de Junho, 243" 
+           country="Brasil" 
+           city="Novo Hamburgo / RS" 
+           cellphone="+55 51 98229.0400"
+           mapLocation="https://goo.gl/maps/GgJDuYy7tdA79Ka88"
+           />
           
-          </button>
-          <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" width="10" height="10" className=" text-white mb-1 mt-auto fill-white "><path d="m8.4 9.2h-7.5c-0.5 0-0.9-0.4-0.9-0.9q0 0 0 0c0-0.4 0.4-0.8 0.9-0.8q0 0 0 0h5.3l-5.7-5.8c-0.4-0.3-0.4-0.9 0-1.2 0.3-0.4 0.9-0.4 1.2 0l5.8 5.7v-5.3c0-0.5 0.4-0.9 0.9-0.9 0.5 0 0.8 0.4 0.8 0.9v7.4c0.1 0.5-0.3 0.9-0.8 1q0 0 0-0.1z"/></svg>
+          <ContactLocationCard
+           uf="/SP" 
+           adress="Rua Ibijaú, 355/Sala 1309" 
+           country="Brasil" 
+           city="São Paulo / SP" 
+           cellphone="+55 11 98871.8556" 
+           mapLocation="https://goo.gl/maps/6Hd7Xoekh616vuYy9"
+           />
+        </div>
+
+        <div className="flex flex-row gap-4">
+            <ContactDiscoverCard
+            siteRef="https://www.planmkt.com.br/"
+            image={GrupoPlanMarketing}
+            imageDimensions=""
+            description="A Plan faz parte do Grupo Plan Marketing, um grupo de comunicação completo."
+            />
+          
+            <ContactDiscoverCard
+            siteRef="https://planmkt.com.br/planxp"
+            imageDimensions="w-[96px] mt-4"
+            image={PlanXp}
+            description="A Plan XP é especializada em realidade virtual, realidade aumentada e jogos."
+            />
+          
+            <ContactDiscoverCard
+            siteRef="https://www.planmkt.com.br/fullup/o-que-fazemos/branding"
+            imageDimensions="mt-5"
+            image={FullUp}
+            description="A FullUp é uma agência especializada em branding, design e campanhas."
+            />
           </div>
-        </form>
+        </div>
+
     </div>
   )
 }
