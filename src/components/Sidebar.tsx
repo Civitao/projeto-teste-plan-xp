@@ -1,7 +1,6 @@
 import Logo from '../assets/plan-logo.png'
 import { SidebarOption } from './SidebarOption'
 import Arrow from '../assets/diagonal-icon.svg'
-import { Games } from '../pages/Games'
 
 export function Sidebar() {
   return(

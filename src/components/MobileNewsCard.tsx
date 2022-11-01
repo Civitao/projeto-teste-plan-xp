@@ -1,5 +1,3 @@
-import Controller from '../assets/web/plan-news/plan-news-company-div-controller.png'
-
 interface MobileNewsCardProps {
   newsName: string;
   newsTitle: string;
@@ -8,20 +6,18 @@ interface MobileNewsCardProps {
   cornerIcon: string;
 }
 
-
 export function MobileNewsCard({...props}: MobileNewsCardProps) {
   return(
-
-<div className="w-[232px] z-0 h-[482px] bg-[#1e1e1e]  mb-16 relative">
+    <div className="w-[220px] z-0 h-[482px] bg-[#1e1e1e]  mb-16 relative">
       <div className="w-[106px] h-[82px] z-10 rotate-45 absolute -right-11 -top-[38px]   bg-[#1e1e1e] ">
         <img className='-rotate-45 absolute top-14 right-8' src={props.cornerIcon}></img>
         </div> 
-        <img className="h-44 w-full" src={props.image}></img>
+        <img className="h-44 w-[220px]" src={props.image}></img>
                                                   
-        <div  className="pl-5 pr-5  h-[264px] pt-5">
+        <div  className="pl-2 pr-2  h-[264px] pt-4">
         <h4 className="uppercase text-xs bg-[#939598] p px-1 w-fit font-medium  text-black">{props.newsName}</h4>
         <h3 className="text-[#A1A1A3] tracking-normal leading-6 mt-4 text-xl">{props.newsTitle}</h3>
-        <p className="text-white mt-4 font-light leading-5 tracking-wide text-md">{props.description}</p>
+        <p className="text-white mt-4 font-light leading-5 tracking-wide text-sm">{props.description}</p>
 
         <div className="mt-4 flex flex-row gap-1">
         <a className="text-xs cursor-pointer hover:text-zinc-500 ease-in duration-100 text-[#939598] uppercase">saiba mais</a>

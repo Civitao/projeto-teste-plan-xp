@@ -1,6 +1,6 @@
-import axios from 'axios'
+// import axios from 'axios'
 import { FormEvent } from 'react';
-import reCAPTCHA, { ReCAPTCHA } from 'react-google-recaptcha'
+import { ReCAPTCHA } from 'react-google-recaptcha'
 
 export function ContactForm () {
   async function handleSendMessage(event: FormEvent) {

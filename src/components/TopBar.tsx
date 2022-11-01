@@ -18,7 +18,6 @@ export function TopBar() {
       <AiOutlineClose className='z-40 absolute top-5 right-8' color='white' size={36} />
       </button>
         <div className='flex h-screen items-center justify-center flex-col gap-12' >
-          
       
           <a onClick={() => setMenuOpen(false)} className='cursor-pointer text-lg text-[#939598] uppercase'>/quem somos</a>
           <a onClick={() => setMenuOpen(false)} className='cursor-pointer text-lg text-[#939598] uppercase'>/o que fazemos</a>

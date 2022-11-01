@@ -19,7 +19,7 @@ export function Mobile () {
       <>
       <MobileHeader />
       
-      <div className="w-screen mt-12 z-0 columns-2 gap-2">
+      <div className="w-screen mt-12 z-0 columns-2 gap-1">
       {newsData.map((item => (
         <MobileNewsCard image={item.image} cornerIcon={item.icon} newsName={item.name} newsTitle={item.title} description={item.description} />
       )))}
