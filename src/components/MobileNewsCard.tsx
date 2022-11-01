@@ -12,8 +12,8 @@ interface MobileNewsCardProps {
 export function MobileNewsCard({...props}: MobileNewsCardProps) {
   return(
 
-<div className="w-[274px] h-[440px] bg-[#292929] relative">
-      <div className="w-24 h-24 rotate-45 absolute -right-12 -top-12  bg-[#1e1e1e] ">
+<div className="w-[232px] z-0 h-[482px] bg-[#1e1e1e]  mb-16 relative">
+      <div className="w-[106px] h-[82px] z-10 rotate-45 absolute -right-11 -top-[38px]   bg-[#1e1e1e] ">
         <img className='-rotate-45 absolute top-14 right-8' src={props.cornerIcon}></img>
         </div> 
         <img className="h-44 w-full" src={props.image}></img>
@@ -21,7 +21,7 @@ export function MobileNewsCard({...props}: MobileNewsCardProps) {
         <div  className="pl-5 pr-5  h-[264px] pt-5">
         <h4 className="uppercase text-xs bg-[#939598] p px-1 w-fit font-medium  text-black">{props.newsName}</h4>
         <h3 className="text-[#A1A1A3] tracking-normal leading-6 mt-4 text-xl">{props.newsTitle}</h3>
-        <p className="text-white mt-4 font-light leading-6 tracking-wide text-xs">{props.description}</p>
+        <p className="text-white mt-4 font-light leading-5 tracking-wide text-md">{props.description}</p>
 
         <div className="mt-4 flex flex-row gap-1">
         <a className="text-xs cursor-pointer hover:text-zinc-500 ease-in duration-100 text-[#939598] uppercase">saiba mais</a>

@@ -11,7 +11,7 @@ interface CasesGamesCardProps {
 export function CasesGamesCard({...props}: CasesGamesCardProps) {
   return(
 
-<div className="w-[274px] h-[440px] bg-[#292929] relative">
+<div className="w-[274px] mb-12 2xl:mb-0  md:mb-32 h-[440px] bg-[#292929] relative">
       <div className="w-24 h-24 rotate-45 absolute -right-12 -top-12  bg-[#1e1e1e] ">
         <img className='-rotate-45 absolute top-14
          right-8'  src={Controller}></img>

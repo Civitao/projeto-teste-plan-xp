@@ -22,10 +22,10 @@ export function CasesGames() {
     ]
 
   return(
-    <div id="/cases-games" className="w-screen bg-[#1e1e1e] invisible md:visible lg:pt-48 pt-80 lg:pl-28 h-screen">
+    <div id="/cases-games" className="w-screen bg-[#1e1e1e] invisible md:h-screen   md:pl-24  md:mt-[360px] md:visible lg:pt-48 pt-80 lg:pl-28 2xl:h-screen 2xl:mt-0  h-screen">
       <CasesGamesHeader/>
 
-      <div className="mt-12 flex flex-row gap-5 ">  
+      <div className="mt-12 mb-4 md:mt-28 md:h-[1200px] row-span-1 columns-2 2xl:flex 2xl:flex-row 2xl:gap-5 ">  
 
       {newsData.map((item) => (
         <CasesGamesCard  image={item.imageRef} key={item.id} caseTitle={item.title} description={item.description} caseName={item.name}/>

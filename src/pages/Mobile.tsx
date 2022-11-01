@@ -10,16 +10,16 @@ import { MobileNewsCard } from "../components/MobileNewsCard";
 export function Mobile () {
   const newsData = [
     {name: ' Humano Virtual', title: 'Conheça o Papai Noel Virtual desenvolvido pela PlanXP', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibed um urna leo, tetviverra...', image: NewsOne, icon: Brain },
-    {name: ' bourbon go', title: 'A nova mania dentro do Bourbon Shopping', description: 'O Bourbon Shopping lança em primeira mão um aplicativo que usa geolocalização e realidade aumentada, promovendo a interação entre o usuário e o ambiente através da tela do celular.', image: NewsThree, icon: Brain },
+    {name: ' bourbon go', title: 'A nova mania dentro do Bourbon Shopping', description: 'O Bourbon Shopping lança em primeira mão um aplicativo que usa geolocalização..', image: NewsThree, icon: Brain },
     {name: ' dhl', title: 'Treinamento em realidade virtual na DHL', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibed um urna leo, tetviverra lorem ipsum...', image: NewsTwo, icon: Controller},
-    {name: ' Civitao Land', title: 'Conheça o Novo Jogo de Civitao', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibed um urna leo, tetviverra...', image: NewsFour, icon: Controller },
+    {name: ' Civitao Land', title: 'Conheça o novo jogo de Civitao', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibed um urna leo, tetviverra...', image: NewsFour, icon: Controller },
   ]
   return (
-    <div className="px-8 visible sm:hidden w-screen pt-16 h-screen">
+    <div className="px-2 visible md:hidden w-screen pt-16 h-screen">
       <>
       <MobileHeader />
       
-      <div className="w-screen mt-12  columns-2 gap-4">
+      <div className="w-screen mt-12 z-0 columns-2 gap-2">
       {newsData.map((item => (
         <MobileNewsCard image={item.image} cornerIcon={item.icon} newsName={item.name} newsTitle={item.title} description={item.description} />
       )))}

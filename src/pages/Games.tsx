@@ -20,7 +20,7 @@ export function Games() {
   
   
   return(
-    <div id="/games" className="w-screen md:visible invisible flex flex-col pt-[128px] lg:pt-48 lg:pl-28 lg:flex  lg:flex-row  bg-[#1e1e1e] h-screen">
+    <div id="/games" className="w-screen md:visible hidden md:flex md:flex-col pt-[128px] md:pl-28 lg:pt-48 lg:pl-28 lg:flex  lg:flex-row  bg-[#1e1e1e] h-screen">
       <>
       <GamesHeader />
   

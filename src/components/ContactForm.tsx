@@ -16,6 +16,7 @@ export function ContactForm () {
       else{
         alert('Erro ao enviar')
       }
+      //ready to integrate with backend
     // try {
     //   // await axios.post('server from restAPI to post form (to db or similar)', {
     //   //   // form post body
@@ -25,10 +26,7 @@ export function ContactForm () {
     //   console.log(err)
     //   alert('Erro ao enviar')
     // }
-  
   }
-
-
 
   return (
 
@@ -62,7 +60,7 @@ export function ContactForm () {
 
   <div className="w-60 h-[240px] mt-6 bg-zinc-400 text-black">Recaptcha place</div>
 
-    <ReCAPTCHA sitekey="6LfcqMoiAAAAAKvV1iMJhr2YEj3BMPLzWp2FGFRm" />
+    <ReCAPTCHA sitekey="6LfcqMo???????vV1????MJhr2?????PLz????FGFRm" />
 
     <div className="flex flex-row mt-6 items-center">
     <button className="text-[#939598] items-center  content-center  text-center text-[13px]  uppercase h-5 w-16" type="submit">
